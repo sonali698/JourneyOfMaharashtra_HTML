@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<div class="slideshow-container">
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;""/>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <input type="submit" class="search" alt="search">
+    </form>
+  </div>
+</div>
+
+<div class="myslides fade">
+ <div class="numbertext">1/4</div>
+  <img src="images/background1.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">2/4</div>
+  <img src="images/maharashtra.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Historical Places..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">3/4</div>
+  <img src="images/warli.jpg" style="width:100%; height:300px;">
+   <div class="caption">Lern The Art and Culture Of Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">4/4</div>
+  <img src="images/beach.jpg" style="width:100%; height:300px;">
+   <div class="caption">Experience Beauty Of Maharashtra..</div>
+</div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) 
+{
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) 
+{
+  showSlides(slideIndex = n);
+}
+function showSlides(n) 
+{
+  var i;
+  var slides = document.getElementsByClassName("myslides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) 
+  {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = " block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Place To Visit 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="places.html">All Places</a>
+      <a href="pop3.html">Beaches</a>
+      <a href="Advanture.html">Advantures Places</a>
+      <a href="pop5.html">Heritage Places</a>
+      <a href="Temples.html">Pilgrimage Places</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Packages
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h2>By City</h2>
+          <a href="Amravati.html">Amravati</a>
+          <a href="Aurangabad.html">Aurangabad</a>
+          <a href="Nagpur.html">Nagpur</a>
+          <a href="Nashik.html">Nashik</a>
+          <a href="Konkan.html">Konkan</a>
+          <a href="Pune.html">Pune</a>
+        </div>
+        <div class="column">
+        <h2>By Type</h2>
+          <a href="pop3.html">Beach Tour Packages</a>
+          <a href="pop5.html">Historical Tour Packages</a>
+          <a href="Temples.html">Pilgrimage Tour Packages</a>
+          <a href="Advanture.html">Advanturous Tour Packages</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+   <a href="contact.html">Contact Us</a>
+   <a href="login1.html" style="float:right">Login</a>
+   <a href="Signup.html" style="float:right">Registration</a>
+</div>
+
+<div class="middlecolumn">
+	<div class="card">
+	<hr>
+	<h1 style="font-size:50px;text-align:center;">Konkan Beaches</h1>
+	<hr>
+	<h2>1.Ganapatipule Beach</h2>
+	<hr>
+	<img src="images/beach1.jpg" alt="Ganpatipule_beach" width="600" height="300">
+	<p>Ganapatipule is not like other popular beaches of Maharashtra, which are crowded and polluted! Instead, it is aesthetic and scenic and regarded as one of the best beaches in Maharashtra and is surrounded by natural splendors like sparkling blue waters, swaying palms, pristine air, white sands, mangroves and coconut palms. Located along the Konkan coast, the Ganapatipule Beach is an idyllic getaway for many tourists who want to experience peace and tranquility through the far stretch of blue Arabian Sea and the white sands.</p>
+	<h2>Popular attractions in and around the beach</h2>
+	<p>he temple of Swayambhu (self-originated) Ganesh is one of the popular attractions in and around Ganapatipule Beach, which is visited by a lot of tourists every day to pay respect to this great deity. Apart from this, there are various restaurants offering local preparations like Ambapoli (thin pancakes of crushed and dried mango), Phanspoli (thin pancakes of dried and crushed Jackfruit), fish curries, and the Kokam Kadi. The travelers can also visit Malgund village, birthplace of the famous Marathi poet ‘Keshavsut’, to witness the beauty of Shastri River, which has its own peaceful and coconut-fringed beach.</p>
+	<hr>
+	
+	<hr>
+	<h2>2.Dahanu-Bordi Beach</h2>
+	<hr>
+	<img src="images/beach2.jpg" alt="dahanu_boardi_beach" width="600" height="300">
+	<p>Dahanu-Bordi Beach tretches along the coastal line of Thane, which is a 145 km drive from Mumbai, famous for Chikoo orchards, available in huge numbers. To reach this beautiful beach destination, one needs to travel across Sahyadri Mountain range and touch the shores of the Arabian Sea lined with orchards and flower gardens. The Bordi Beach is half an hour drive from Dhanu, which too is marked with the presence of Casurina trees, coconut groves, and Chikoo Orchards.</p>
+	<h2>Popular attractions in and around the beach</h2>
+	<p>For someone interested in water adventure, Dahanu-Bordi Beach is a perfect destination that offers sports activities like gliding, trekking,  kite flying, etc. Tourists can experience trekking on nearby hills like Mahalaxmi, Asherigad, Bahrot, and Kahoj and enjoy the view of Dahanu-Bordi from some height. Other than this, you can also visit the historical Bahrot Cave, which is mainly a pilgrim center of the Zoroastrians and Udwada that contains a thousand year old, still burning, sacred fire.</p>
+	<hr>
+	
+	<hr>
+	<h2>3.Juhu Beach</h2>
+	<hr>
+	<img src="images/beach3.jpg" alt="juhu_beach" width="600" height="300">
+	<p>Located in the ‘Dream city of India’ Mumbai…..Juhu is one of the most popular and posh beaches of Maharashtra, famous for the eatables like bhelpuri (Indian snacks) and chat available at the food stalls surrounding the beach. A lot of Bollywood celebrities live nearby this beautiful beach and are often seen walking down the seashore. Juhu is one of the most crowded beaches in Maharashtra and offers everything from horse ride and donkey ride to some typical Mumbai snacks and allow tourists to play cricket matches and watch film shoot, which often takes place here. It is located  in the north of Versova, which is Mumbai’s largest Koli (fishing community). Revamped with beautiful bungalows, luxurious hotels and apartments, Juhu looks like a diamond necklace at night when the lights are turned on.</p>
+	<h2>Popular attractions in and around the beach</h2>
+	<p>Juhu is lined with luxurious hotels and restaurants and if you want to satisfy your taste buds with Italian food, then Little Italy, Mangi Ferra, Don Giovanni, and Penne are some good Italian restaurants available here. One can also visit pubs and discotheques that are available in good number near Juhu Beach. Apart from this, Gandhi Gram is one place on Juhu Beach, where children gather to enjoy their summer vacations playing sports like basketball, cricket and football.</p>
+	<hr>
+	
+	<hr>
+	<h2>4.Shriwardhan Harihareshwar</h2>
+	<hr>
+	<img src="images/beach4.jpg" alt="Shriwardhan_Harihareshwar_beach" width="600" height="300">
+	<p>Etched along the Konkan border in Maharashtra, the Shriwardhan Harihareshwar Beach is known for its serene and quaint atmosphere, perfect for a peaceful beach holiday. The serene town of Harihareshwar is marked with gentle winds, soft sandy beaches, unspoiled stretches of seashore, and rich landmarks of Maratha Kingdomthat still remain beautiful. This is the perfect place for people who likes to indulge in relaxing activities like sun basking, sun bathing, beach walking, yoga, and meditation.</p>
+	<h2>Popular attractions in and around the beach</h2>
+	<p>Shriwardhan Harihareshwar Beach is sited with plenty of restaurants that offer delicacies including freshly caught crabs, lobsters, and other seafood, and fusion of Konkani & Maharashtrain cuisine. It also provides boat-riding experience to the  travelers to help them spot  the beautiful land where Peshwas, or prime ministers, of the Maratha Kingdom used to live. Some must-visit places here are Peshwa Smarak and the famous temple of Harihareshwar.</p>
+	<hr>
+	
+	<hr>
+	<h2>5.Tarkarli Beach</h2>
+	<hr>
+	<img src="images/beach5.jpg" alt="Tarkarli_beach" width="600" height="300">
+	<p>Situated 6 kms south of Malvan and 546 kms away from Mumbai on the coast of Maharashtra is the pristine Tarkarli Beach that is surrounded by tall Suru trees and Karli River. The water of Tarkarli Beach is very clear and looks even more panoramic with beautiful sailboats in the backdrop. One can do an array of things here like, water sports, scuba diving, snorkelling, beach walking, sun basking, sun bathing, etc. and explore the nearby landmarks and beaches.</p>
+	<h2>Popular attractions in and around the beach</h2>
+	<p>There are a lot of things that you can see near Tarkarli Beach. To start with…..you can visit Sindhudurg Fort and Padmagarh Fort, two of Maharashtra’s most important sea forts, built in the 17th century. Devbag Sangam, Vengurla rocks, backwaters of Karli river, Nivati beach (ideal spot for spotting dolphins), Dhamapur Lake, Bhagwati temple, Rameshwar, Jay Ganesh Temple, and Bhogve Beach are some of the must see tourist places around Tarkarli Beach.</p>
+	<hr>
+	
+	<hr>
+	<h2>6.Velneshwar Beach</h2>
+	<hr>
+	<img src="images/beach6.jpg" alt="Velneshwar_beach" width="600" height="300">
+	<p>The green coconut palm grooves and rock free seawater makes the Velneshwar Beach a must see tourist places around Mumbai, ideal for swimming and sunbathing. Located in the north of Shastri River, this beautiful beach lies away from the hustle and bustle of the city, giving a peaceful and pristine atmosphere to nature lovers. This destination is also famous for Maha Shivratri Fair (Festival of Lord Shiva), which takes place here every year in March.</p>
+	<h2>Popular attractions in and around the beach</h2>
+	<p>Apart from activities like sun bathing, sun basking, snorkelling, boat ride, surfing, etc. Velneshwar Beach is also known for an old Shiva Temple, frequently visited by tourists and pilgrims.</p>
+	<hr>
+	
+	<hr>
+	<h2>7.Guhagar Beach</h2>
+	<hr>
+	<img src="images/beach7.jpg" alt="guhagar_beach" width="600" height="300">
+	<p>Guhagar is a city in the Ratnagiri district of Maharashtra in India, and Chiplun is the nearest city and railhead to it, that is located about 44 kilometres away from Guhagar.A favourite picnic spot among the local inhabitants of the area as well as tourists from all across the country, the beach is noted for its breathtaking sunrise and sunset scenes, as well as its tranquil surroundings. In fact, the Guhagar beach is the only white sand beach that is situated among the long stretch of Konkan beaches, and proudly boasts of its clean and vast stretch of sand that is bare, save a distant jetty far away. The expanse of sand is sprinkled with swaying palm and coconut trees. White-bellied sea-eagles soaring across the vast sky is also quite a familiar sight to behold here. </p>
+	<h2>Popular attractions in and around the beach</h2>
+	<p>You can take a morning walk on the beach and stroll along the water with your loved ones, and also have a look at the 4-kilometre long Enror Jetty that is located to the right. </p>
+	<hr>
+	
+	<hr>
+	<h2>8.Vengurla Malvan</h2>
+	<hr>
+	<img src="images/beach8.jpg" alt="Vengurla_Malvan_beach" width="600" height="300">
+	<p>Surrounded by coconut palms, Mango, Jackfruit, and Cashew trees and covered with soft white sands, the Vengurla Malvan is the best place for weekend holidays in Maharashtra. It is mentioned as a trade settlement in the history books as the place was burned twice due to attacks that took place between 1664 and 1812. And, which is why it is called Burnt Islands. Vengurla Beach that lies in the old town of Malvan is almost hidden by palms and it is known for its salt pans, Chinese clay pottery and the special Malvani cuisine, which is quite different from the Konkan food.</p>
+	<h2>Popular attractions in and around the beach</h2>
+	<p>Shri Devi Sateri Temple and Rameshwar Mandir are popular places visited by plenty of tourists every day. Also, there are two forts in the township of Malvan, namely Sindhudurg and Padmagad, which are believed to have hold two underground tunnel links for trading.</p>
+	<hr>
+	
+	<hr>
+	<h2>9.Marine Drive</h2>
+	<hr>
+	<img src="images/beach9.jpg" alt="Marine_Drive" width="600" height="300">
+	<p>One of the most popular tourist attractions in Mumbai, Marine Drive, also known as Queen’s Necklace, is the lifeline of Mumbai, where locals hang out to cool down the work-pressure of their otherwise busy life. Marine Drive is located on the edge of Chowpatty Beach, which is popular for several Hindu religious ceremonies like annual thread-tying ceremony, nariel-purnima and Ganesh Chaturthi immersions. Chowpatty Beach is equally known for stalls that sell Bhelpuri, Kulfi and Paan, and Nana-Nani Park for elderly people. This place is ideal for people who like to indulge in soft activities like walking, sun bathing, relaxing, and for enjoying local cuisines.</p>
+	<h2>Popular attractions in and around the beach</h2>
+	<p>This C-shaped road links Nariman Point to Babulnath. It has attractions like the 5 Star Hotel Oberoi, Hotel Taj, Gateway of India along with many multi-cuisine restaurants and shopping centers that lines this beautiful beach spot.</p>
+	<hr>
+	
+	<hr>
+	<h2>10.Bhatye Beach</h2>
+	<hr>
+	<img src="images/beach10.jpg" alt="Marine_Drive" width="600" height="300">
+	<p>The Bhatye beach is a lovely, long stretch of a clean beach ideal for a relaxing holiday. Bhatye, a small village close to Ratnagiri city is popular for its generous flat sea showers. The length of the beach is 1.5 kms and it is flat and straight and clear. The Ratnagiri light house and the famous Madavi beach of Ratnagiri city can be seen from Bhatye Beach.You can go for a morning walk, laze around, play beach ball and football in the sand, collect shells or just enjoy the beauty of this beach. One can 't forget to visit the Kohinoor to see the sunrise or sunset as it is a sight which will leave you captivated and stunned. The sand is soft like velvet and you can easily dust it off your body as it won't even stick. The Bhatye beach is a quiet and serene beach and you will feel it is almost your own private beach.</p>
+	<h2>Popular attractions in and around the beach</h2>
+	<p>Taxis and cabs are available to go around Bhatye where you can see other places such as View Point, Thibaw Point, Thibaw Palace,Mandvi Beach, Ram Mandir , etc.</p>
+	<hr>
+	
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+<div class="footer">
+ <table style="width:100%;">
+<tr>
+	<td>Privacy Policy</td>
+	<td>Instagram</td>
+	<td>Travel Information</td>
+</tr>
+<tr>
+	<td>Terms Of Use</td>
+	<td>Facebook</td>
+	<td>FAQs</td>
+</tr>
+<tr>
+	<td></td>
+	<td>tweeter</td>
+	<td><a href="contact.html">Write For Us</a></td>
+</tr>
+</table>
+<div style="text-align: center; padding: 16px;">
+       &copy; Copyright - Sonali 2019
+</div>
+</div>
+
+</body>
+</html>
+

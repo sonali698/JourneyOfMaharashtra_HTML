@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;"/></a>
+<?php
+$username=['username'];
+$password=['password'];
+
+session_start();
+
+if(isset($_SESSION['username']))
+{
+	echo"<h1>Welcome ".$_SESSION['username']."Register Your Hotel Here...</h1>";
+}
+else
+{
+	if($_POST[username]==$username && $_POST[password]==$password)
+	{
+		$_SESSION[username]=$username;
+		echo"<script>location.href='welcome.php'</script>";
+	}
+	else
+	{
+		echo"<script>alert('username or password is incorrect!')</script>";
+		echo"<script>location.href='login1.php'</script>";
+	}
+}
+?>
+<h2 style="font-size:40px;text-align:center;"><u>Hotel Registration</u></h2>
+</div>
+
+<div>
+<hr>
+  <form id="register" action="home.html">
+  <h2>Hotel Information</h2>
+    <label for="hname">Hotel Name</label><br>
+    <input type="text" id="hname" name="hotelname" placeholder="Hotel name.."><br>
+
+    <label for="Add">Address</label><br>
+    <input type="text" id="Add" name="Add" placeholder="Hotel Address.."><br>
+
+    <label for="place">Place</label>
+    <select id="place" name="place" style="width:25%">
+      <option value="Amravati">Amravati</option>
+      <option value="Aurangabad">Aurangabad</option>
+      <option value="Konkan">Konkan</option>
+      <option value="Nagpur">Nagpur</option>
+      <option value="Nashik">Nashik</option>
+      <option value="Pune">Pune</option>
+    </select>
+  
+	<label for="zip">Zip Code</label>
+    <input type="text" id="zip" name="zip" style="width:25%">  
+</form>
+<hr>
+
+<h2>Contact Information</h2>
+    <label for="cname">Traveller Name</label><br>
+    <input type="text" id="cname" name="cname" placeholder="Your name.."><br>
+
+	<label for="mail">Mail Id</label><br>
+    <input type="text" id="mail" name="mail" placeholder=".com" style="width:45%"><br>
+    
+    <label for="mob">Mobile Number</label>
+    <input type="text" id="mob" name="mob" style="width:25%">
+
+<hr>
+
+<h2>Hotel Details</h2>
+    <label for="overview">Overview</label>
+    <input type="text" id="overview" name="overview"><br>
+
+	<label for="rooms">No. Of Rooms</label>
+    <input type="text" id="rooms" name="rooms" style="width:15%">
+  	
+
+  <div class="multiselect">
+  <div class="selectBox" onclick="showCheckboxes()">
+    <label for="type">Hotel Aminities</label>
+      <select>
+        <option>Select an option</option>
+      </select>
+    <div id="checkboxes">
+      <label for="one">
+        <input type="checkbox" id="one">Front Desk</label>
+      <label for="two">
+        <input type="checkbox" id="two">Lift/Elevator</label>
+      <label for="three">
+        <input type="checkbox" id="three">Parking Facility</label>
+      <label for="Four">
+        <input type="checkbox" id="Four">Swimming Pool</label>
+      <label for="Five">
+        <input type="checkbox" id="Five">Internet Access</label>
+      <label for="Six">
+        <input type="checkbox" id="Six">Doctor On Call</label>
+      <label for="Seven">
+        <input type="checkbox" id="Seven">Lobby</label>
+      <label for="Eight">
+        <input type="checkbox" id="Eight">Kitchen</label>
+      <label for="Nine">
+        <input type="checkbox" id="Nine">Power Backup</label>
+    </div>
+    </div>
+<script>
+var expanded = false;
+function showCheckboxes() 
+{
+  var checkboxes = document.getElementById("checkboxes");
+  if (!expanded) 
+  {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } 
+  else 
+  {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+}
+</script>
+    </div>
+
+  
+
+
+<hr>
+
+<h2>Room Details</h2>
+    <label for="type">Type Of Room</label>
+    <select id="type" name="type" style="width:25%">
+      <option value="Amravati">Amravati</option>
+      <option value="Aurangabad">Aurangabad</option>
+      <option value="Konkan">Konkan</option>
+      <option value="Nagpur">Nagpur</option>
+      <option value="Nashik">Nashik</option>
+      <option value="Pune">Pune</option>
+    </select>
+    
+    <label for="RAmi">Room Aminities</label>
+    <select id="Rami" name="Rami" style="width:25%">
+      <option value="Amravati">Amravati</option>
+      <option value="Aurangabad">Aurangabad</option>
+      <option value="Konkan">Konkan</option>
+      <option value="Nagpur">Nagpur</option>
+      <option value="Nashik">Nashik</option>
+      <option value="Pune">Pune</option>
+    </select>
+    
+    <br><label for="pack">Hotel Package</label>
+    <input type="text" id="rooms" name="rooms" style="width:10%">
+     <a href="#" class="button" style="background-color:#FF9B39;padding: 10px 10px;">Browse</a>
+     
+<hr>
+<input type="submit" value="Submit" onclick="show_alert()" style="background-color:#FF9B39;font-size:25px;">
+</form>
+<script>
+function show_alert()
+{
+alert("Hotel Registration is successful");
+window.location="home.html";
+}
+</script>
+</div>
+
+</body>
+</html>
+

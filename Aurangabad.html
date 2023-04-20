@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<style>
+.column 
+{
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container 
+{
+  padding: 0 10px;
+}
+.container p
+{
+  color:grey;
+}
+.container::after, .row::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+.title 
+{
+  color:black;
+  font-size:16px;
+}
+.button 
+{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover 
+{
+  background-color: #555;
+}
+</style>
+<div class="slideshow-container">
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;""/>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <input type="submit" class="search" alt="search">
+    </form>
+  </div>
+</div>
+
+<div class="myslides fade">
+ <div class="numbertext">1/4</div>
+  <img src="images/background1.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">2/4</div>
+  <img src="images/maharashtra.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Historical Places..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">3/4</div>
+  <img src="images/warli.jpg" style="width:100%; height:300px;">
+   <div class="caption">Lern The Art and Culture Of Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">4/4</div>
+  <img src="images/beach.jpg" style="width:100%; height:300px;">
+   <div class="caption">Experience Beauty Of Maharashtra..</div>
+</div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) 
+{
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) 
+{
+  showSlides(slideIndex = n);
+}
+function showSlides(n) 
+{
+  var i;
+  var slides = document.getElementsByClassName("myslides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) 
+  {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = " block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Place To Visit 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="places.html">All Places</a>
+      <a href="pop3.html">Beaches</a>
+      <a href="Advanture.html">Advantures Places</a>
+      <a href="pop5.html">Heritage Places</a>
+      <a href="Temples.html">Pilgrimage Places</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Packages
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h2>By City</h2>
+          <a href="Amravati.html">Amravati</a>
+          <a href="Aurangabad.html">Aurangabad</a>
+          <a href="Nagpur.html">Nagpur</a>
+          <a href="Nashik.html">Nashik</a>
+          <a href="Konkan.html">Konkan</a>
+          <a href="Pune.html">Pune</a>
+        </div>
+        <div class="column">
+        <h2>By Type</h2>
+          <a href="pop3.html">Beach Tour Packages</a>
+          <a href="pop5.html">Historical Tour Packages</a>
+          <a href="Temples.html">Pilgrimage Tour Packages</a>
+          <a href="Advanture.html">Advanturous Tour Packages</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+   <a href="contact.html">Contact Us</a>
+   <a href="login1.html" style="float:right">Login</a>
+   <a href="Signup.html" style="float:right">Registration</a>
+</div>
+
+<div class="middlecolumn">
+	<div class="card">
+	<hr>
+	<h1 style="font-size:50px;text-align:center;">Aurangabad</h1>
+	<hr>
+	<p>Home to ancient and spectacular Ajanta and Ellora Caves, Aurangabad is the perfect city to cherish the rich history of Maharashta. The city's winsome land is also dotted with palaces, tombs, and parks, making it a must visit tourist spot for history and architecture buffs. Aurangabad also boasts an opulent collection of handicraft items and metal goods that make excellent souvenirs to carry back home.</p>
+	<hr><h2 style="font-size:35px;text-align:center;">How To Reach Aurangabad?</h2><hr>
+	<p>Aurangabad is a distinct city in the Aurangabad district of Maharashtra. A noted tourist spot owing to umpteen historical and cultural places to visit, this city has a prompt connectivity to all parts of India and abroad. all modes of transport like air, rail and road are available in Aurangabad, which you can opt as per your convenience. Here is a brief picture of how you can reach this historical city of India.</p>
+	<h4>BY AIR:</h4>
+	<p>Aurangabad Airport, also known as Chikkalthana Airport has well connected flights to Delhi, Hyderabad, Mumbai, Udaipur, Pune, Jaipur, and Nagpur.</p>
+	<h4>BY RAIL:</h4>
+	<p>Aurangabad has its own Rail head on the Secunderabad-Manmad section of South Central Railway in Indian Railways (Nanded Division). The city has rail connectivity to Delhi, Chennai, Ahmedabad, Mumbai (Fastest - Aurangabad Jan Shatabdi Express), and Hyderabad. It also has trains connecting to Nizamabad, Nagpur, Shirdi, Visakhapatnam, Nanded, Parli, Nasik, Amritsar, Kurnool, Pune, Ambala, Kakinada, Renigunta, Madurai, Gwalior, Vadodra, Bhopal, Narsapur, Rameswaram, Tirupati, Okha and Rajkot.</p>
+	<h4>BY ROAD:</h4>
+	<p>The major cities of Maharashtra and other states are continually connected by buses to Aurangabad. The prime roadway is the National Highway 211 that starts from Dhule up to Solapur and passes through Aurangabad. It has excellent road connectivity to Pune, Jalna, Ahmednagar, Beed, Nagpur and Mumbai. The recently developed four lane road of National Highway is presently the busiest route for these buses. Nagpur-Aurangabad-Mumbai express highway is still under construction. Central Bus station and CIDCO bus station are the prime bus stations in Aurangabad.</p>
+	<hr><h2 style="font-size:35px;text-align:center;">Points of Interest</h2><hr>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="Biwi_ka_Maqbara.html" href="pop5.html">
+       <img src="images/Biwi_ka_Maqbara.jpg" alt="Biwi_ka_Maqbara" width="300" height="300">
+      </a>
+    <div class="desc">Bibi ka Maqbara</div>
+</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="daulatabad.html" href="pop5.html">
+       <img src="images/daulatabad.jpg" alt="Daulatabad_Fort" width="300" height="300">
+      </a>
+    <div class="desc">Daulatabad Fort</div>
+</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="Elloracaves.html" href="pop2.html">
+       <img src="images/Elloracaves.jpg" alt="Ellora_Caves" width="300" height="300">
+      </a>
+    <div class="desc">Ellora Caves</div>
+</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="ajanta.html" href="pop2.html">
+       <img src="images/ajanta.jpg" alt="Ajanta_Caves" width="300" height="300">
+      </a>
+    <div class="desc">Ajanta Caves</div>
+</div>
+</div>
+
+<hr><h2 style="font-size:35px;text-align:center;">Where to Stay in Aurangabad?</h2><hr>
+<div class="responsive">
+	<div class="gallery">
+      <a target="Hotel1_1.html" href="Hotel1_1.html">
+       <img src="images/greenolive.jpg" alt="hotel_Green_Olive" width="300" height="300">
+      </a>
+    <div class="desc">Hotel Green Olive</div>
+</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="Hotel1_2.html" href="Hotel1_2.html">
+       <img src="images/gurjas.jpg" alt="Hotel Gurjas" width="300" height="300">
+      </a>
+    <div class="desc">Hotel Gurjas</div>
+</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="Hotel1_3.html" href="Hotel1_3.html">
+       <img src="images/jpinternational.jpg" alt="Hotel JP international" width="300" height="300">
+      </a>
+    <div class="desc">Hotel JP international</div>
+</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="Hotel1_4.html" href="Hotel1_4.html">
+       <img src="images/panchvati.jpg" alt="Hotel Panchvati" width="300" height="300">
+      </a>
+    <div class="desc">Hotel Panchvati</div>
+</div>
+</div>
+
+
+<hr><h2 style="font-size:35px;text-align:center;">Aurangabad Tour Packages</h2><hr>
+<p>Meticulously designed Aurangabad tour packages help you to get the most out of your holidays in the historical town. From UNESCO World Heritage Sites to temples, these packages include all the attractions. Well-planned itineraries allow you to experience the quaint town wearing a rustic charm from close quarters.</p>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/a1.jpg" alt="Caves_Tour" style="width:60%">
+      <div class="container">
+        <h4>Mumbai-Ellora Caves Tour</h4>
+        <title></title>
+        <p>Mumbai - Aurangabad - Mumbai</p>
+        <p>Duration:3 nights</p>
+        <p><a href="login1.html"><button class="button">Book Now</button></a></p>
+      </div>
+    </div>
+  </div>
+ <div class="column">
+    <div class="card">
+      <img src="images/a2.jpg" alt="Caves_Tour" style="width:60%">
+      <div class="container">
+        <h4>Ajanta-Ellora Caves Tour</h4>
+        <title></title>
+        <p>Mumbai-Aurangabad-Nashik-Mumbai</p>
+        <p>Duration:4 nights</p>
+        <p><a href="login1.html"><button class="button">Book Now</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/temple8.jpg" alt="shirdi_Tour" style="width:60%">
+      <div class="container">
+        <h4>Shirdi With Aurangabad Tour</h4>
+        <title></title>
+        <p>Mumbai-Shirdi-Aurangabad-Mumbai</p>
+        <p>Duration:4 nights</p>
+        <p><a href="login1.html"><button class="button">Book Now</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/a4.jpg" alt="Caves_Tour" style="width:60%">
+      <div class="container">
+        <h4>Best Maharashtra Tour</h4>
+        <title></title>
+        <p style="font-size:14px;">Mumbai–Lonavala-Matheran-Nashik-Shirdi-Aurangabad-Pune-Mahabaleshwar-Mumbai</p>
+        <p>Duration:14 nights</p>
+        <p><a href="login1.html"><button class="button">Book Now</button></a></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="clearfix"></div>
+
+
+</div>
+</div>
+
+<div class="footer">
+ <table style="width:100%;">
+<tr>
+	<td>Privacy Policy</td>
+	<td>Instagram</td>
+	<td>Travel Information</td>
+</tr>
+<tr>
+	<td>Terms Of Use</td>
+	<td>Facebook</td>
+	<td>FAQs</td>
+</tr>
+<tr>
+	<td></td>
+	<td>tweeter</td>
+	<td><a href="contact.html">Write For Us</a></td>
+</tr>
+</table>
+<div style="text-align: center; padding: 16px;">
+       &copy; Copyright - Sonali 2019
+</div>
+</div>
+
+
+ 
+</body>
+</html>
+

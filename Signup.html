@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;"/></a>
+<h2 style="font-size:40px;text-align:center;"><u>Register Your Account</u></h2>
+</div>
+
+<div>
+<?php
+
+session_start();
+
+$con= mysqli_connect('localhost','root','');
+mysqli_select_db($con,'registerdb');
+
+$username=$_POST['username'];
+$password=$_POST['password'];
+
+$s="select * from usertable where username='$username'";
+
+$result=mysqli_query($con,$s);
+
+$num=mysqli_num_rows($result);
+
+if($num==1)
+{
+	echo"username already taken";
+}
+else
+{
+	$reg="insert into uertable(username,password)values('$username','$password')";
+	mysqli_query($con,$reg);
+	echo"registration successfull";
+}
+
+?>
+<hr>
+  <form id="register" action="signup.php" method="POST">
+  <h2>Traveller Information</h2>
+    <label for="cname">Traveller Name</label><br>
+    <input type="text" id="cname" name="customername" placeholder="Traveller's Full Name.." required><br>
+
+    <label for="Email">Email Id</label>
+    <input type="text" id="Email" name="username" placeholder=".com" required style="width:50%"><br>
+	
+	<label for="psw">Password</label>
+    <input type="password" placeholder="Enter Password" name="password" required style="width:30%"><br>
+    
+    <label for="mob">Mobile Number</label>
+    <input type="text" id="mob" name="mob" style="width:20%">
+    
+    <br><label for="city">City</label>
+    <input type="text" id="city" name="cityname" style="width:25%"><br>
+  
+	<label for="zip">Zip Code</label>
+    <input type="text" id="zip" name="zip" style="width:25%">
+		
+<hr>
+
+<input type="submit" value="Sign Up" id="Submit" onclick="show_alert();" style="background-color:#FF9B39;font-size:25px;" method="post">
+</form>
+<script>
+function show_alert()
+{
+	alert("Your Registration Successfully");
+	window.location="login1.html";
+}
+</script>
+</div>
+
+</body>
+</html>
+

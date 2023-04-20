@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/hotel.css">
+</head>
+<body>
+
+<div class="slideshow-container">
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;"/>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <input type="submit" class="search" alt="search">
+    </form>
+  </div>
+</div>
+
+<div class="myslides fade">
+ <div class="numbertext">1/4</div>
+  <img src="images/background1.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">2/4</div>
+  <img src="images/maharashtra.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Historical Places..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">3/4</div>
+  <img src="images/warli.jpg" style="width:100%; height:300px;">
+   <div class="caption">Lern The Art and Culture Of Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">4/4</div>
+  <img src="images/beach.jpg" style="width:100%; height:300px;">
+   <div class="caption">Experience Beauty Of Maharashtra..</div>
+</div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) 
+{
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) 
+{
+  showSlides(slideIndex = n);
+}
+function showSlides(n) 
+{
+  var i;
+  var slides = document.getElementsByClassName("myslides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) 
+  {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = " block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Place To Visit</button>
+	<div class="dropdown-content">
+      <a href="places.html">All Places</a>
+      <a href="pop3.html">Beaches</a>
+      <a href="Advanture.html">Advantures Places</a>
+      <a href="pop5.html">Heritage Places</a>
+      <a href="Temples.html">Pilgrimage Places</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Packages
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h2>By City</h2>
+          <a href="Amravati.html">Amravati</a>
+          <a href="Aurangabad.html">Aurangabad</a>
+          <a href="Nagpur.html">Nagpur</a>
+          <a href="Nashik.html">Nashik</a>
+          <a href="Konkan.html">Konkan</a>
+          <a href="Pune.html">Pune</a>
+        </div>
+        <div class="column">
+        <h2>By Type</h2>
+          <a href="pop3.html">Beach Tour Packages</a>
+          <a href="pop5.html">Historical Tour Packages</a>
+          <a href="Temples.html">Pilgrimage Tour Packages</a>
+          <a href="Advanture.html">Advanturous Tour Packages</a>
+        </div>
+        </div>
+    </div>
+  </div>
+
+   <a href="contact.html">Contact Us</a>
+   <a href="login1.html" style="float:right">Login</a>
+   <a href="Signup.html" style="float:right">Registration</a>
+</div>
+
+<div class="middlecolumn">
+	<div class="card">
+	<hr>
+	<h1 style="font-size:50px;text-align:center;">Hotel Green olive</h1>
+	<hr>
+	<img src="images/Hotel1_1.jpg" alt="hotel-shree-hari" width="600" height="300">
+	<a href="register.html" class="button">Book This Hotel<i class="right"></i></a>
+	<hr><h2 style="font-size:35px;text-align:left;">Hotel Description</h2><hr>
+	<p>Hotel Green Olive is ideally located and is one of the finest 3 star properties in Aurangabad. It offers a blend of tasteful hospitality and modern styling in all its rooms which made satisfies the guests completely. The rooms are centrally airconditioned and are decortaed in an elegant manner. The hotel is enabled with wi-fi and is located near the main shopping area Nirala Bazar and Aurangpura.</p>
+	<p><h4>Address:</h4>13/3 Bhagya Nagar, CBS Road, Beside PNB, Near Baba Petrol Pump, Aurangabad- 431001
+</p>
+	<hr><h2 style="font-size:35px;width:50%">Hotel Facilities</h2><hr>
+	<div class="a">
+	<ul>
+		<li>Electronic Safe</li>
+		<li>Hair Dryer</li>
+		<li>Satelite Tv</li>
+		<li>Mini Bar</li>
+		<li>Room Service</li>
+		<li>AC Room</li>
+		<li>Doctor On Call</li>
+	<ul>
+	</div>
+	<hr><h2 style="font-size:35px;width:50%;">Room Facilities</h2><hr>
+	<div class="a">
+	<ul>
+		<li>Newspaper</li>
+		<li>Free WiFi</li>
+		<li>Hot And Cold Water Supply</li>
+	<ul>
+	</div>
+	<hr><h2 style="font-size:35px;width:50%;">NearBy Tourist Attraction</h2><hr>
+	<div class="a">
+	<ul>
+		<li>Bibi ka Maqbara- 4.5 kms</li>
+		<li>Aurangabad caves- 6.4kms</li>
+		<li>Pan Chakki- 2.6 Kms</li>
+		<li>Daulatabad Fort- 14.2 kms</li>
+		<li>Ellora Caves- 28.6 kms</li>
+		<li>Grishneshwara temples- 27.9 kms</li>
+		<li>Shani Signapur- 78.1 kms</li>
+		<li>Ajanta caves: 96.6 kms</li>
+		<li>Shirdi: 105.8 kms</li>
+	<ul>
+	</div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+<div class="footer">
+ <table style="width:100%;">
+<tr>
+	<td>Privacy Policy</td>
+	<td>Instagram</td>
+	<td>Travel Information</td>
+</tr>
+<tr>
+	<td>Terms Of Use</td>
+	<td>Facebook</td>
+	<td>FAQs</td>
+</tr>
+<tr>
+	<td></td>
+	<td>tweeter</td>
+	<td><a href="contact.html">Write For Us</a></td>
+</tr>
+</table>
+<div style="text-align: center; padding: 16px;">
+       &copy; Copyright - Sonali 2019
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/hotel.css">
+</head>
+<body>
+
+<div class="slideshow-container">
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;""/>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <input type="submit" class="search" alt="search">
+    </form>
+  </div>
+</div>
+
+<div class="myslides fade">
+ <div class="numbertext">1/4</div>
+  <img src="images/background1.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">2/4</div>
+  <img src="images/maharashtra.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Historical Places..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">3/4</div>
+  <img src="images/warli.jpg" style="width:100%; height:300px;">
+   <div class="caption">Lern The Art and Culture Of Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">4/4</div>
+  <img src="images/beach.jpg" style="width:100%; height:300px;">
+   <div class="caption">Experience Beauty Of Maharashtra..</div>
+</div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) 
+{
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) 
+{
+  showSlides(slideIndex = n);
+}
+function showSlides(n) 
+{
+  var i;
+  var slides = document.getElementsByClassName("myslides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) 
+  {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = " block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Place To Visit 
+    </button>
+    <div class="dropdown-content">
+      <a href="places.html">All Places</a>
+      <a href="pop3.html">Beaches</a>
+      <a href="Advanture.html">Advantures Places</a>
+      <a href="pop5.html">Heritage Places</a>
+      <a href="Temples.html">Pilgrimage Places</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Packages
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h2>By City</h2>
+          <a href="Amravati.html">Amravati</a>
+          <a href="Aurangabad.html">Aurangabad</a>
+          <a href="Nagpur.html">Nagpur</a>
+          <a href="Nashik.html">Nashik</a>
+          <a href="Konkan.html">Konkan</a>
+          <a href="Pune.html">Pune</a>
+        </div>
+        <div class="column">
+        <h2>By Type</h2>
+          <a href="pop3.html">Beach Tour Packages</a>
+          <a href="pop5.html">Historical Tour Packages</a>
+          <a href="Temples.html">Pilgrimage Tour Packages</a>
+          <a href="Advanture.html">Advanturous Tour Packages</a>
+        </div>
+        </div>
+    </div>
+  </div>
+   
+   <a href="contact.html">Contact Us</a>
+   <a href="login1.html" style="float:right">Login</a>
+   <a href="Signup.html" style="float:right">Registration</a>
+</div>
+
+<div class="middlecolumn">
+	<div class="card">
+	<hr>
+	<h1 style="font-size:50px;text-align:center;">Hotel Royale Heritage</h1>
+	<hr>
+	<img src="images/royaleheritage.jpg" alt="hotel-royaleheritage" width="600" height="300">
+	<a href="register.html" class="button">Book This Hotel<i class="right"></i></a>
+	<hr><h2 style="font-size:35px;text-align:left;">Hotel Description</h2><hr>
+	<p>Hotel Royale Heritage is an inviting budget property centrally located in Nashik. Featuring 60 AC/ Non AC / Family rooms, it is an extremely hospitable hotel. The beauty of this hotel lies in its private terraces or balconies cross ventilation, green open spaces, and a common sit out. These features lend this hotel with a laid back vibe, ideal for travelers to relax. Hotel Royale Heritage also houses party ground, conference halls and banquet halls. The passionate and well-experienced staff at the hotel welcomes guests warmly. Travelers who wish to explore the alluring locales of Nashik, can book a room in advance at this hotel.</p>
+	<p>Travelers can choose from a variety of Deluxe AC, Super Deluxe AC, Super Deluxe Non AC and Executive Non AC rooms. The in-room amenities of this hotel include comfortable bed, seating area, make-up mirror, wardrobe, free Wi-Fi, Cable television, air conditioning and an attached washroom with hot and cold water running. This property also has a pure vegetarian air conditioned restaurant that serves delectable delicacies. Apart from this hotel offers ample parking and plenty of space to enjoy the delightful ambience. If you are on a lookout for a suitable property that goes well with your pocket, Hotel Royale Heritage will be the best choice to make.</p>
+	<hr><h2 style="font-size:35px;width:50%">Hotel Facilities</h2><hr>
+	<div class="a">
+	<ul>
+		<li>Conference Hall</li>
+		<li>Laundry Service</li>
+		<li>Parking Facility</li>
+		<li>Power Backup</li>
+		<li>Medical Facility</li>
+		<li>Pure-Veg AC Restaurent</li>
+		<li>Room Service</li>
+	<ul>
+	</div>
+	<hr><h2 style="font-size:35px;width:50%;">Room Facilities</h2><hr>
+	<div class="a">
+	<ul>
+		<li>Large Beds</li>
+		<li>Seating Area</li>
+		<li>Makeup Mirror</li>
+		<li>Wardrobe</li>
+		<li>Bottled Water</li>
+		<li>Attached Bathroom</li>
+		<li>Flat Screen TV</li>
+		<li>Air Conditioner</li>
+		<li>Hot And Cold Water Supply</li>
+		<li>Private attached terrace or balcony</li>
+	<ul>
+	</div>
+	<hr><h2 style="font-size:35px;text-align:left;">Dinning</h2><hr>
+	<p>Hotel Royale Heritage has air conditioned restaurant of its own that serves authentic pure vegetarian, South and North Indian delicacies for its guests. While your stay at this hotel, you can enjoy a variety of finger-licking food along with a great ambience.</p>
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+<div class="footer">
+ <table style="width:100%;">
+<tr>
+	<td>Privacy Policy</td>
+	<td>Instagram</td>
+	<td>Travel Information</td>
+</tr>
+<tr>
+	<td>Terms Of Use</td>
+	<td>Facebook</td>
+	<td>FAQs</td>
+</tr>
+<tr>
+	<td></td>
+	<td>tweeter</td>
+	<td><a href="contact.html">Write For Us</a></td>
+</tr>
+</table>
+<div style="text-align: center; padding: 16px;">
+       &copy; Copyright - Sonali 2019
+</div>
+</div>
+
+</body>
+</html>

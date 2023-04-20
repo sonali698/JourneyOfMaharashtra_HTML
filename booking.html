@@ -1,0 +1,121 @@
+<?php
+$username=['username'];
+$password=['password'];
+
+session_start();
+
+if(isset($_SESSION['username']))
+{
+	echo"<h1>welcome ".$_SESSION['username']."</h1>";
+	echo"<a href='booking.html'>Booking</a><br>";
+	echo"<br><a href='logout.php'><input type=button value=logout name=logout></a>";
+}
+else
+{
+	if($_POST[username]==$username && $_POST[password]==$password)
+	{
+		$_SESSION[username]=$username;
+		echo"<script>location.href='welcome.php'</script>";
+	}
+	else
+	{
+		echo"<script>alert('username or password is incorrect!')</script>";
+		echo"<script>location.href='login1.php'</script>";
+	}
+}
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;"/></a>
+<h2 style="font-size:40px;text-align:center;"><u>Plan Your Trip</u></h2>
+<div class="navbar" style="padding: 10px 10px;">
+  <a href="regiter.html">Hotel Registration</a>
+  <a href="Logout.php">Logout</a>
+ </div>
+</div>
+
+<div>
+<hr>
+  <form id="register" action="home.html">
+  <h2>Customer Information</h2>
+    <label for="cname">Customer Name</label><br>
+    <input type="text" id="cname" name="customername" placeholder="Customer's Full Name.." required><br>
+
+    <label for="Email">Email Id</label><br>
+    <input type="text" id="Email" name="Email" placeholder=".com" required><br>
+    
+    <label for="mob">Mobile Number</label>
+    <input type="text" id="mob" name="mob" style="width:20%">
+    
+    <label for="city">City</label>
+    <select id="place" name="place" style="width:25%">
+      <option value="Amravati">Amravati</option>
+      <option value="Aurangabad">Aurangabad</option>
+      <option value="Konkan">Konkan</option>
+      <option value="Nagpur">Nagpur</option>
+      <option value="Nashik">Nashik</option>
+      <option value="Pune">Pune</option>
+    </select>
+  
+	<label for="zip">Zip Code</label>
+    <input type="text" id="zip" name="zip" style="width:25%">
+		
+<hr>
+<h2>Tour Information</h2>
+    <label for="cname">Tour Type</label><br>
+    <select id="place" name="place" style="width:25%">
+      <option value="" disabled selected>Select Type</option>
+      <option value="Advanture">Advanture</option>
+      <option value="Beach">Beach Tour</option>
+      <option value="Pilgrimage">Pilgrimage</option>
+      <option value="Heritage">Heritage</option>
+    </select><br>
+<br>
+<label for="aday">Date Of Arrival</label><br>  
+<input type="date" name="Aday" style="height:25%"><br>
+<br>
+
+<label for="acity">Arrival City/Place</label><br>
+<input type="text" id="acity" name="acity" style="width:20%"><br>
+
+<br>
+
+<label for="pname">Numbers Of Passengers</label><br>
+<input type="number" id="pname" name="pname" style="width:25%"><br>
+<br>
+<label for="places">Which place(s) Would You Like To Visit</label><br>
+<textarea rows="4" cols="50" placeholder="eg.thibapoint,shanivarwada"></textarea><br>
+<br>
+<label for="Dname">Duration Of Stay</label><br>
+<input type="number" id="Dname" name="Dname" style="width:25%"><br>
+
+<hr>
+<form action="/action_page.php">
+<h2>Hotel Details</h2>
+	<label for="rooms">No. Of Rooms</label>
+    <input type="text" id="rooms" name="rooms" style="width:15%">   
+<hr>
+<label for="places">Additional Comments</label><br>
+<textarea rows="4" cols="50" style="width:50%"></textarea><br>
+<hr>
+<input type="submit" value="Submit" id="Submit" onclick="show_alert();" style="background-color:#FF9B39;font-size:25px;" method="post">
+</form>
+<script>
+function show_alert()
+{
+	alert("Tour Booking Is Successful");
+	window.location="places.html";
+}
+</script>
+</div>
+
+</body>
+</html>
+?>
+

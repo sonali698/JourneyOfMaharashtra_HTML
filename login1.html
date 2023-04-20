@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;"/></a>
+<h2 style="font-size:40px;text-align:center;"><u>Login Ur Account</u></h2>
+<?php
+
+session_start();
+
+$con= mysqli_connect('localhost','root','');
+mysqli_select_db($con,'registerdb');
+
+$username=$_POST['username'];
+$password=$_POST['password'];
+
+$s="select * from usertable where username='$username' && password='$password'";
+
+$result=mysqli_query($con,$s);
+
+$num=mysqli_num_rows($result);
+
+if($num==1)
+{
+	header('location:booking.php');
+}
+else
+{
+	header('location:login1.html');
+}
+
+?>
+</div>
+<fieldset>
+<div>
+  <form action="booking.php" method="POST">
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+        
+      <button type="submit" onclick="show_alert()" style="background-color:#FF9B39;font-size:25px;width:15%;">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="closeForm()" class="cancelbtn" style="background-color:silver;font-size:25px;width:15%;">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+function show_alert()
+{
+alert("Login is Successful");
+window.location="booking.php";
+}
+function closeForm() 
+{
+alert("Cancel Login?");
+window.location="home.html";
+}
+</script>
+</form>
+</fieldset>
+</div>
+
+</body>
+</html>
+

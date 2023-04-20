@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<style>
+textarea 
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+</style>
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;"/></a>
+<h2 style="font-size:40px;text-align:center;"><u>Contact Us</u></h2>
+</div>
+<fieldset>
+<div>
+  <form action="home.html">
+    <label for="ename">Your Email</label><br>
+    <input type="text" id="ename" name="Ename" placeholder=".com" required><br>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg"></textarea>
+<hr>
+<input type="submit" value="Send" onclick="show_alert()" style="background-color:#FF9B39;font-size:25px;width:100%;">
+<input type="submit" value="Cancel" onclick="closeForm()" style="background-color:black;font-size:25px;width:100%;">
+<script>
+function show_alert()
+{
+alert("Thank You..!!");
+window.location="home.html";
+}
+function closeForm() 
+{
+  document.getElementById("myForm").style.display = "home.html";
+}
+</script>
+</form>
+</fieldset>
+</div>
+
+</body>
+</html>
+

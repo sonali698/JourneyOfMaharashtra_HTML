@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<div class="slideshow-container">
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;""/>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <input type="submit" class="search" alt="search">
+    </form>
+  </div>
+</div>
+
+<div class="myslides fade">
+ <div class="numbertext">1/4</div>
+  <img src="images/background1.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">2/4</div>
+  <img src="images/maharashtra.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Historical Places..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">3/4</div>
+  <img src="images/warli.jpg" style="width:100%; height:300px;">
+   <div class="caption">Lern The Art and Culture Of Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">4/4</div>
+  <img src="images/beach.jpg" style="width:100%; height:300px;">
+   <div class="caption">Experience Beauty Of Maharashtra..</div>
+</div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) 
+{
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) 
+{
+  showSlides(slideIndex = n);
+}
+function showSlides(n) 
+{
+  var i;
+  var slides = document.getElementsByClassName("myslides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) 
+  {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = " block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Place To Visit 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="places.html">All Places</a>
+      <a href="pop3.html">Beaches</a>
+      <a href="Advanture.html">Advantures Places</a>
+      <a href="pop5.html">Heritage Places</a>
+      <a href="Temples.html">Pilgrimage Places</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Packages
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h2>By City</h2>
+          <a href="Amravati.html">Amravati</a>
+          <a href="Aurangabad.html">Aurangabad</a>
+          <a href="Nagpur.html">Nagpur</a>
+          <a href="Nashik.html">Nashik</a>
+          <a href="Konkan.html">Konkan</a>
+          <a href="Pune.html">Pune</a>
+        </div>
+        <div class="column">
+        <h2>By Type</h2>
+          <a href="pop3.html">Beach Tour Packages</a>
+          <a href="pop5.html">Historical Tour Packages</a>
+          <a href="Temples.html">Pilgrimage Tour Packages</a>
+          <a href="Advanture.html">Advanturous Tour Packages</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+   <a href="contact.html">Contact Us</a>
+   <a href="login1.html" style="float:right">Login</a>
+   <a href="Signup.html" style="float:right">Registration</a>
+</div>
+
+<div class="middlecolumn">
+	<div class="card">
+	<hr>
+	<h1 style="font-size:50px;text-align:center;">Konkan Forts</h1>
+	<hr>
+	<h2>1.Kolaba Fort-Alibag</h2>
+	<hr>
+	<img src="images/fort1.jpg" alt="Kulaba_Fort" width="600" height="300">
+	<p>The fort of Kulaba was built by Chatrapati Shivaji Maharaj in 1652 to keep a check on the activities of the foreign naval powers of English, Portuguese and the Siddhi of Janjira. It is a testimony to the foresight of the great maratha king. The Kulaba fort is still in good condition and one can go to visit the fort by walking across the seashore at low tide or by taking a buggy ride @ 20 Rs. Per person. However be sure to check the proper timings to visit the fort as it is dangerous to try to go to the fort at high tide. You get approximately 3 to 4 hours to see the fort and come back.</p>
+	<p>The fort has two main entrances, one at the sea side and other towards Alibag. The average height of the fort walls is 25 feet. The fort has sweet water wells and some buildings inside its premises. The Siddhivinayak temple inside the fort was built by Raghoji Angre in 1759. The Ganpati Idol in the temple is very beautiful and many people worship it.</p>
+	<hr>
+	
+	<hr>
+	<h2>2.Janjira Fort</h2>
+	<hr>
+	<img src="images/fort2.jpg" alt="janjira_Fort" width="600" height="300">
+	<p>Located near Rajapur, Janjira is a majestic sea fort which remained unconquered till the end. The fort was built by Siddhi Amber who came from Abyssinia, the fort is an excellent example of fort building architecture and its outer walls are still in a good condition. I am sure you will be awed looking at the fort by thinking how the hell people would have built a fort in the middle of the sea? You have to take a boat ride to go to the fort, and there is a lot to see on the fort.</p>
+	<p>There are guides available who tour you through the fort while giving you an interesting version of the forts history. The inside premises of the fort are in ruins but still give you a glimpse of its glorious past. The Huge cannons by the names Kalal bangdi, Chavri and Landa Kasam are worth a mention, it is said that these guns could fire at a distance of two Kms. from the fort making it impossible for enemy ships to come near. From the fort you can see the sea fort of Kasa or Padmadurg which was built by Shivaji Maharaj to counter the might of Siddhi.</p>
+	<hr>
+	
+	<hr>
+	<h2>3.Suvarnadurga and kanakdurga-Harne Fort</h2>
+	<hr>
+	<img src="images/fort3.jpg" alt="Harne_Fort" width="600" height="300">
+	<p>Located at 17 kms. from Dapoli at Harne, The Suvarnadurg fort consists of two forts, kanakdurga the land fort and Suvarnadurga the sea fort. The forts were built by Adilshah and later captured and fortified by Chatrapati Shivaji Maharaj in 1660. Earlier there was a tunnel connecting both the forts but now only way to go to Suvarnadurga is through a boat. However currently there is no regular boat service to the fort and one has to arrange for the ferry from the local fishermen. There is a lighthouse inside the Kanakdurga fort.</p>
+	<hr>
+	
+	<hr>
+	<h2>4.Gopalgad Fort - Anjanvel</h2>
+	<hr>
+	<img src="images/fort4.jpg" alt="Gopalgad_Fort" width="600" height="300">
+	<p>Anjanwel is a small town near Enron Company Plant at Veldur. Gopalgad Fort at anjanwel is one of the picturesque forts in Konkan. It is a coastal fort, half of which is on a hill and the other half touches the sea. You can drive up to the fort walls, but care should be taken while driving as it has very steep climbs. Roaming through the remnants of the fort is a nostalgic experience which you will definitely like.</p>
+	<hr>
+	
+	<hr>
+	<h2>5.Ratnadurga and Bhagwati Forts</h2>
+	<hr>
+	<img src="images/fort5.jpg" alt="Ratnadurga_Bhagwati_Forts" width="600" height="300">
+	<p>The Ratnadurga and Bhagwati forts were built during the Bijapur dynasty and captured by Chatrapati Shivaji Maharaj from the Adilshah and fortified by him in 1670. The forts are on a hill and its three sides are sea facing. The forts are spread in an area of 120 Acres. Both the forts are worth seeing and the Bhagwati fort also has a temple of Bhagwati Devi.</p>
+	<p>You can see the Bhagwati Bander (Port) at the foot of this fort and there is a Lighthouse near the fort from where you can get a view of Ratnagiri city below. The Bhagwati Bander (Port) is a major port on the Konkan coastline.</p>
+	<hr>
+	
+	<hr>
+	<h2>6.Sindhudurg Fort</h2>
+	<hr>
+	<img src="images/fort6.jpg" alt="Sindhudurg_Fort" width="600" height="300">
+	<p>The Star attraction of the Malvan trip, the sindhudurg fort is an excellent example of the foresight of the great Maratha King, Chatrapati Shivaji Maharaj. He built this fort in 1664 on 'Kurte' islands and is an excellent example of fort building architecture. You have to take boat ride in order to visit the fort and will cost you 20 - 30 Rs.</p>
+	<p>The fort has 52 'Buruzs' with an average height of 30 meters. The fort has three sweet water wells with Bhavanimata, Mahadev Temples and also a Temple of Shivaji Maharaj himself. In the fort you can also find a rare example of branching of a coconut tree. A visit to the fort is a must for any tourist and you will enjoy going around in the fort.</p>
+	<hr>
+	
+	<hr>
+	<h2>7.Vijaydurga Fort</h2>
+	<hr>
+	<img src="images/fort7.jpg" alt="Vijaydurga_Fort" width="600" height="300">
+	<p>Devgad is famous all over the world for its delicious Alphanso mangoes, and this becomes quiet evident as soon as you approach Devgad. You can see Mango plantations everywhere and it is the main occupation of the people in Devgad. Located near Devgad the Vijaydurga fort was built by Chatrapati Shivaji Maharaj on the mouth of Vaghotane creek.</p>
+	<p>The fort is on a strip of land going into the sea and is spread in an area of six hectares. The fort has 27 'Buruzs' and is still in a very good condition. The huge stones used for the fort walls and the strength of the walls are still visible and it is quiet interesting to think how these huge walls were built in the open sea.</p>
+	<hr>
+		
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+<div class="footer">
+ <table style="width:100%;">
+<tr>
+	<td>Privacy Policy</td>
+	<td>Instagram</td>
+	<td>Travel Information</td>
+</tr>
+<tr>
+	<td>Terms Of Use</td>
+	<td>Facebook</td>
+	<td>FAQs</td>
+</tr>
+<tr>
+	<td></td>
+	<td>tweeter</td>
+	<td><a href="contact.html">Write For Us</a></td>
+</tr>
+</table>
+<div style="text-align: center; padding: 16px;">
+       &copy; Copyright - Sonali 2019
+</div>
+</div>
+
+</body>
+</html>
+

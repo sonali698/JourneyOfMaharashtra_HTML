@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<div class="slideshow-container">
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;""/>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <input type="submit" class="search" alt="search">
+    </form>
+  </div>
+</div>
+
+<div class="myslides fade">
+ <div class="numbertext">1/4</div>
+  <img src="images/background1.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">2/4</div>
+  <img src="images/maharashtra.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Historical Places..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">3/4</div>
+  <img src="images/warli.jpg" style="width:100%; height:300px;">
+   <div class="caption">Lern The Art and Culture Of Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">4/4</div>
+  <img src="images/beach.jpg" style="width:100%; height:300px;">
+   <div class="caption">Experience Beauty Of Maharashtra..</div>
+</div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) 
+{
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) 
+{
+  showSlides(slideIndex = n);
+}
+function showSlides(n) 
+{
+  var i;
+  var slides = document.getElementsByClassName("myslides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) 
+  {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = " block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Place To Visit 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="places.html">All Places</a>
+      <a href="Beaches1.html">Beaches</a>
+      <a href="Advanture.html">Advantures Places</a>
+      <a href="Historic.html">Heritage Places</a>
+      <a href="Pilgrimage.html">Pilgrimage Places</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Packages
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h2>By City</h2>
+          <a href="Amravati.html">Amravati</a>
+          <a href="Aurangabad.html">Aurangabad</a>
+          <a href="Nagpur.html">Nagpur</a>
+          <a href="Nashik.html">Nashik</a>
+          <a href="Konkan.html">Konkan</a>
+          <a href="Pune.html">Pune</a>
+        </div>
+        <div class="column">
+        <h2>By Type</h2>
+          <a href="pop3.html">Beach Tour Packages</a>
+          <a href="pop5.html">Historical Tour Packages</a>
+          <a href="Temples.html">Pilgrimage Tour Packages</a>
+          <a href="Advanture.html">Advanturous Tour Packages</a>
+        </div>
+        </div>
+    </div>
+  </div>
+  
+   <a href="contact.html">Contact Us</a>
+   <a href="login1.html" style="float:right">Login</a>
+   <a href="Signup.html" style="float:right">Registration</a>
+</div>
+
+<div class="middlecolumn">
+	<div class="card">
+	<hr>
+	<h1 style="font-size:50px;text-align:center;">Konkan Temples</h1>
+	<hr>
+	<h2>Kulaswamini Bhawani Waghjai Mandir(Terav,Ratnagiri)</h2>
+	<hr>
+	<img src="images/temple1.jpg" alt="waghjai_mandir" width="600" height="300">
+	<img src="images/devi.jpg" alt="waghjai_mandir" width="250" height="300">
+	<p>Terav village is situated at hill top from 8 km to chiplun city. By the grace of kulaswamini Bhawani waghjai, terav village is gifted with idyllic nature. While driving from Chiplun to terav you will be experiencing a short effect of matheran. In this area you will find mango, jackfruits, guava etc. Kulaswamini Bhawani waghjai temple originally was built in year 1860. The temple was reconstructed and now it is the one of the famous attraction of Terav. People visit this place to get blessings from goddess.</p>
+	<p>The classic black statue of kulaswamini Bhawani waghjai is above 9 feets in height. Temple is magnificently crafted which captivates attentions of visitors.</p>
+	<p>The best time to visit kulaswamini Bhawani waghjai temple is during Navratri festival and holi (shimga) festival.</p>
+	<hr>
+	
+	<hr>
+	<h2>Haji Malang baba(Thane)</h2>
+	<hr>
+	<img src="images/temple2.jpg" alt="Haji_Malang_baba " width="600" height="300">
+	<p>Haji Malang (Thane) Haji Malang, is a 300 year old dargah at Ambernath, where Baba Abdur Rehman Malang was buried. Malang was a Sufi saint who came to India in the 12th century AD from the middle east. Haji Malang, in true syncretic tradition, was one of the few dargahs where a Hindu vahivatdar (traditional priest from the Hindu Karandekar family) and a Muslim mutavalli (claiming to be distant kin of the saint), had both been officiating at religious rituals.</p>
+	<p>Hazrat Qamli Shah Baba this hazrat's dargah is near dargah of Hazrat Haji Malang in Ambernath, thane district</p>
+	<hr>
+	
+	<hr>
+	<h2>Kopineshwar Temple(Thane West)</h2>
+	<hr>
+	<img src="images/temple3.jpg" alt="Kopineshwar_Temple" width="600" height="300">
+	<p>This is an ancient temple of Lord Shiva.The Shiva Lingam here is around 5 feet tall. The lingam grows in height every year and it is believed that when it touches the ceiling of the temple, a pralayam will occur. The temple was built by the Silhara dynasty kings who ruled Thane between 810 and 1240 AD. The lingam is swayambhu and appeared in the near-by Masunda lake popularly known as Talao Pali.</p>
+	<p>The present temple structure was re-built in 1760 by Sarsubhedar Ramaji Mahadeo Bivalkar. There are many other small temples: Rukmini-Viththala, Sitala Devi, Panchamukha Siva Lingam, Brahma-deva, Uttareswar, Ram-parivar, Dakshinamukha Hanuman, Kalikadevi, Gayatri Devi, Kala-Bhairava, Dattatreya, Vasishtha maharshi with kamadhenu.</p>
+	<hr>
+	
+	<hr>
+	<h2>Mumbadevi temple(Mumba Devi Marg, Mumbadevi Area, Zaveri Bazar, Mumbai)</h2>
+	<hr>
+	<img src="images/temple4.jpg" alt="Mumbadevi_temple" width="600" height="300">
+	<p>The Mumbadevi temple is one of the oldest temples in the city. In fact, Mumbai city derives its very name form the Mumbadevi temple. The temple is dedicated to Goddess Mumba who is said to be the patron goddess of the native Somvanshi Kshatriyas, agricultural communities and the kolis (Fishermen).</p>
+	<p>The idol of the goddess is decorated with jewellery like a nose pin, crown and a necklace and is placed on a decorated altar. The idol itself is made from a black stone and the face is painted orange. The temple complex also houses idols of other deities and devotees gather in a larger number on Tuesdays as it considered an auspicious day.</p>
+	<hr>
+	
+	<hr>
+	<h2>Mahalakshmi temple(Mahalaxmi West, Breach Candy, Cumballa Hill, Mumbai)</h2>
+	<hr>
+	<img src="images/temple5.jpg" alt="Mahalakshmi_temple" width="600" height="300">
+	<p>The Mahalakshmi Temple is a very famous temple in Mumbai, dedicated to Goddess Lakshmi, Durga and Saraswati and was constructed by a Hindu merchant in 1831. The temple offers a sea-facing view and is one the key landmarks of the city.</p>
+	<p>There is a stone carved deep at the entrance of the temple, which connects the mandap to the main deity idol. The Lakshmi idol is decorated with a special nose ring and a golden mask.</p>
+	<p>During the Navratri Festival, the temple is decorated and sees devotees from all over the country. There are shops nearby that sell puja items and flowers that devotees can purchase.</p>
+	<hr>
+	
+	<hr>
+	<h2>Siddhivinayak Temple(Prabhadevi, Mumbai)</h2>
+	<hr>
+	<img src="images/temple6.jpg" alt="Siddhivinayak_Temple" width="600" height="300">
+	<p>Siddhivinayak Temple is perhaps the most famous temple in Mumbai, located in Prabhadevi. The temple is dedicated to Lord Ganesha, the elephant-headed God. The temple was founded in 1801 by Devbhai Patil and Laxman Vithu, who also founded many many other Ashtavinayak temples in Maharashtra.</p>
+	<p>Tuesdays are a special day to visit the temple for darshan. People also believe that if you whisper your innermost wishes into the ear of the idol, they come true. The temple also attracts the likes of celebrities ranging from Bollywood actors to famous sportsmen.</p>
+	<p><h3>Location:</h3> S K Bole Marg, Prabhadevi, Mumbai
+       <h3>Timing:</h3>Wednesday to Monday 5.30 am to 10 pm. Tuesdays 3:15 am to 10 pm.</p>
+	<hr>
+	
+	<hr>
+	<h2> Balaji Temple(Nerul,Navi Mumbai)</h2>
+	<hr>
+	<img src="images/temple7.jpg" alt=" Balaji_Temple" width="600" height="300">
+	<p>The Balaji temple at Nerul is highly revered by the South Indian community in Nerul. The temple is constructed on a small hill in Nerul and the temple is quite close to the railway station.</p>
+	<p>The temple’s main deity is Balaji but the temple compound, which is quite humongous, also has temples dedicated to other Gods such as Lakshmi, Narasimha, Vidya Ganapati, Ramanuja and Vishwaksena.</p>
+	<p>The temple was inaugurated by S Venkata Varadan, who served as the Director of the Nehru Planetarium in 1990. The temple stands at approximately 60 feet high and the temple complex also includes a garden.</p>
+	<p><h3>Location:</h3>Nerul, Navi Mumbai
+       <h3>Timing:</h3>5.30 am to 9.30 pm</p>
+	<hr>
+	
+	<hr>
+	<h2>Shirdi Sai Baba Temple(Shirdi)</h2>
+	<hr>
+	<img src="images/temple8.jpg" alt="Shirdi_Sai_Baba_Temple" width="600" height="300">
+	<p>Shirdi is a pilgrimage site made famous by the Saint Sai Baba. Sai Baba was one of most well-known saints in India and was known for being selfless and highly dedicated to the poor. This earned him the respect of many and was worshiped by all the stratas of society.</p>
+	<p>The temple complex is sprawled across two hundred square meters, containing other temples in addition to Sai Baba’s shrine. The temple is one of the richest temples in India with donations that may surpass a billion rupees annually.</p>
+	<hr>
+	
+	<hr>
+	<h2>Shani Shingnapur Temple(Shani shinganapur,Ahmednagar)</h2>
+	<hr>
+	<img src="images/temple9.jpg" alt="Shani_Shingnapur_Temple" width="600" height="300">
+	<p>Shani Shingnapur is a little village close to Shirdi, and is the house of Lord Shanidev. The idol of Lord Shanidev at this temple is believed to be Jagrut Devasthan, which means that the deity still resides in the idol.</p>
+	<p>One interesting fact about this village is that it doesn’t have doors or windows, since it is believed that Lord Shani Dev will protect them from any thievery or other such crimes.
+	The temple is visited by devotees by the thousands everyday.</p>
+	<hr>
+	
+	<hr>
+	<h2>Trimbakeshwar Temple(Shrimant Peshwe Path, Trimbakeshwar)</h2>
+	<hr>
+	<img src="images/temple10.jpg" alt="Trimbakeshwar_Temple" width="600" height="300">
+	<p>The Trimbakeshwar temple was built by the Maratha Peshwa Shri Nanasaheb between 1755 and 1786. The temple is dedicated to Lord Shiva and the Jyotirlinga. The temple is surrounded by three hills, Brahmagiri, Nilagiri and Kalagiri, and also has three lingas that represent the faces of Shiva, Vishnu and Brahma.</p>
+	<p>The notable feature of the linga is that a jewel-studded crown rests on its head and is displayed to devotees on Mondays after evening prayers.</p>
+	<p>A visit to a temple can rejuvenate your spiritual energy and can also relieve you from the everyday stresses of life, particularly if you live in an ambitious city like Mumbai.</p>
+	<hr>
+	
+	<hr>
+	<h2>Marleshwar Temple(Sangameshwar,Ratnagiri)</h2>
+	<hr>
+	<img src="images/temple11.jpg" alt="Marleshwar_Temple" width="600" height="300">
+	<p>Marleshwar Temple is a cave temple surrounded by the scenic Sahyadri mountain ranges. It is located at Maral village near Sangameshwar in Ratnagiri district.
+	This temple perched atop a hill is dedicated to Lord Shiva and one has to climb some 400 steps to reach the summit. A visit to this temple along with family will be a gratifying experience although the climb may prove to be a bit difficult for children and elders. Makar sankranti and Mahashivratri are celebrated with great pomp here.</p>
+	<p>Further up from the main area of the temple is the place of Dhareshwar waterfalls and Karamboli Doh. Adventure lovers and trekkers will love this area. Parshuram temple, Koyna Dam, Jaygad fort, Malgund and Pawas are nearby places which attract tourists.</p>
+	<p>Travellers are advised against coming here in the monsoon time as the pathways get very muddy and slippery during this time. Moreover the temple may be closed if the waterfall reaches the cave premises making it very difficult to approach the temple site.</p>
+	<p>There are state transport buses from nearby major towns to Maral village and hired rickshaws or taxis will also take you to the temple base.</p>
+	<hr>
+	
+	<hr>
+	<h2>Shri Devi Bhagwati Mandir(Ratnagiri)</h2>
+	<hr>
+	<img src="images/temple12.jpg" alt="bhagvati_mandir" width="600" height="300">
+	<p>Shri Devi Bhagwati Mandir is located inside the Ratnadurg Fort in Ratnagiri District of Maharashtra. The presiding deity of this temple is Goddess Durga, who is also the patron goddess of Ratnadurg Fort. This temple is also noteworthy for its traditional architectural style. The most auspicious occasion at this temple is the Navarathri Festival, which is celebrated with great vigour and enthusiasm.</p>
+	<hr>
+	
+	<hr>
+	<h2>Parashuram Temple(Chiplun,Ratnagiri)</h2>
+	<hr>
+	<img src="images/temple13.jpg" alt="Parashuram_Temple" width="600" height="300">
+	<p>Parashuram Temple is located in the Parashuram Village of Maharashtra, at a distance of about 90 km from Ratnagiri Town. Situated at an elevation of more than 305 m above sea level, this village lies on the Mumbai-Goa National Highway 17.</p>
+	<p>This temple was constructed about 300 years ago by Samarth Ramdas Swami, under the patronage of Chhatrapati Shivaji. Lord Parashuram, the sixth incarnation of Lord Vishnu, is the presiding deity of the Parashuram Temple and Parashuram Village. It is believed that Parashuram Village was created by Lord Parashuram, who reclaimed it from the sea.</p>
+	<p>Other religious spots like Hanuman Temple, Ganga Devi Temple, Ganesha Temple, etc. can also be seen in the vicinity of Parashuram Temple.</p>
+	<hr>
+	
+	<hr>
+	<h2>Swayambhu Ganpati Temple(Ganpatipule,Ratnagiri)</h2>
+	<hr>
+	<img src="images/temple15.jpg" alt="ganpati_mandir" width="600" height="300">
+	<p>Swayambhu Ganpati Temple is located at Ganpatipule in Ratnagiri District of Maharashtra. This temple, also known as Ganpatipule Temple, is about 4000 years old.</p>
+	<p>The idol of the presiding deity of this temple, Lord Ganapathy, is a swayambhu(self created/manifested), which is formed of white sand. The idol placed in the sanctum sanctorum, made of copper, gets lit up by sunlight during the sunrise and sunset.</p>
+	<p>Swayambhu Ganpati Temple, also regarded as ‘Paschim Dwar Dewata’, is at a distance of about 55 km from Ratnagiri Town.</p>
+	<hr>
+	
+	<hr>
+	<h2>Rameshwar Temple (23km north of Malvan)</h2>
+	<hr>
+	<img src="images/temple14.jpg" alt="Rameshwar_Temple " width="600" height="300">
+	<p>Situated deep within the heart of the town Achara, it is a temple of lord Rameshwar worshipped and highly regarded by the locals. Everything carved in this temple is the work of locals some 600 years ago even before the time of Shivaji. Gavpalne is a tradition that is followed here every five years and during this time, the villagers have to reside outside the village.</p>
+	<p>The entire village of Achara has been a gift from Shambhaji Raje, the son of Shivaji to the temple trust or Devastaan. Rameshwar temple has a great political as well as devotional backup and is one of the most influential authorities of the area. </p>
+	<hr>
+	
+	<hr>
+	<h2>Bharadi Devi(Anganewadi To Kandalgaon Road, Anganewadi)</h2>
+	<hr>
+	<img src="images/temple16.jpg" alt="Bharadi_Devi" width="600" height="300">
+	<p>Bharadi Devi(goddess) is one goddess one just can't think of missing when one is in Malvan. This is the famous "active goddess" situated at Anganewadi, 14 kms from Malvan. Angnewadi is the small hamlet of Masure village. The Bharadi devi (goddess) is very famous for her wish-fulfilling power. Devotees express their wish before her and once the wish is fulfilled they come to express their gratitude.</p>
+	<p>The highlight of Angnewadi is an annual fair [some time in February, the date is declared after getting approval from the goddess] which is attended by lacs of devotees. The villagers of Angnewadi have deep faith in 'Bharadi Devi' and they obey her wishes. This small hamlet completely abstains from alcohol consumption. It's strictly forbidden in this hamlet.</p>
+	<p>Many public transportation buses, passenger vehicles ply from Malvan and Kankavli to Angnewadi. One can visit Angnewadi and come back to Malvan within 2 hours.</p>
+	<hr>
+	
+	<hr>
+	<h2>Jagadishwar Temple(Gherkilla Raigad, Raigad)</h2>
+	<hr>
+	<img src="images/temple17.jpg" alt="Jagadishwar_Temple" width="600" height="300">
+	<p>The main deity of the temple is Shri Jagadishwara. Shivaji who was an ardent follower of the Hindu religion was known to visit the temple daily. The temple was built in the royal palace and it's dome represents the Moghul architecture of that time.</p>
+	<hr>
+		
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+<div class="footer">
+ <table style="width:100%;">
+<tr>
+	<td>Privacy Policy</td>
+	<td>Instagram</td>
+	<td>Travel Information</td>
+</tr>
+<tr>
+	<td>Terms Of Use</td>
+	<td>Facebook</td>
+	<td>FAQs</td>
+</tr>
+<tr>
+	<td></td>
+	<td>tweeter</td>
+	<td><a href="contact.html">Write For Us</a></td>
+</tr>
+</table>
+<div style="text-align: center; padding: 16px;">
+       &copy; Copyright - Sonali 2019
+</div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<style>
+.column 
+{
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container 
+{
+  padding: 0 10px;
+}
+.container p
+{
+  color:grey;
+}
+.container::after, .row::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+.title 
+{
+  color:black;
+  font-size:16px;
+}
+.button 
+{
+  padding: 20px 40px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin:3px 2px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #FF9B39;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover 
+{
+  background-color: #555;
+}
+</style>
+<div class="slideshow-container">
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;""/>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <input type="submit" class="search" alt="search">
+    </form>
+  </div>
+</div>
+
+<div class="myslides fade">
+ <div class="numbertext">1/4</div>
+  <img src="images/background1.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">2/4</div>
+  <img src="images/maharashtra.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Historical Places..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">3/4</div>
+  <img src="images/warli.jpg" style="width:100%; height:300px;">
+   <div class="caption">Lern The Art and Culture Of Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">4/4</div>
+  <img src="images/beach.jpg" style="width:100%; height:300px;">
+   <div class="caption">Experience Beauty Of Maharashtra..</div>
+</div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) 
+{
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) 
+{
+  showSlides(slideIndex = n);
+}
+function showSlides(n) 
+{
+  var i;
+  var slides = document.getElementsByClassName("myslides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) 
+  {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = " block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Place To Visit 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="places.html">All Places</a>
+      <a href="pop3.html">Beaches</a>
+      <a href="Advanture.html">Advantures Places</a>
+      <a href="pop5.html">Heritage Places</a>
+      <a href="Temples.html">Pilgrimage Places</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Packages
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h2>By City</h2>
+          <a href="Amravati.html">Amravati</a>
+          <a href="Aurangabad.html">Aurangabad</a>
+          <a href="Nagpur.html">Nagpur</a>
+          <a href="Nashik.html">Nashik</a>
+          <a href="Konkan.html">Konkan</a>
+          <a href="Pune.html">Pune</a>
+        </div>
+        <div class="column">
+        <h2>By Type</h2>
+          <a href="pop3.html">Beach Tour Packages</a>
+          <a href="pop5.html">Historical Tour Packages</a>
+          <a href="Temples.html">Pilgrimage Tour Packages</a>
+          <a href="Advanture.html">Advanturous Tour Packages</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+   
+   <a href="contact.html">Contact Us</a>
+   <a href="login1.html" style="float:right">Login</a>
+   <a href="Signup.html" style="float:right">Registration</a>
+</div>
+
+<div class="middlecolumn">
+	<div class="card">
+	<hr>
+	<h1 style="font-size:50px;text-align:center;">Nagpur</h1>
+	<hr>
+	<p>Nagpur is called as the winter capital of Maharashtra and the third largest city too. It is also proposed to be one of the smart cities of the country is also called the Tiger Capital. What makes the city really popular in India is its extensive production of oranges, which also earned Nagpur a title "Orange city" as well. Dotted with several historical and religious sites and a few modern day attractions, Nagpur makes a nice place to spend a holiday in Maharashtra.</p>
+	<hr><h2 style="font-size:35px;text-align:center;">How To Reach Nagpur?</h2><hr>
+	<p>Nagpur is a famous city of India. It is also the commercial hub of Maharashtra. A proper roadway connects the city with various other parts of the country. The nearest places to Nagpur which are important for commerce as well as residence are Pune and Mumbai. Well built roads and railways connect the city throughout.</p>
+	<h4>BY AIR:</h4>
+	<p>Nagpur is on important places of the country. Hence it has an international terminus too. The airport is just 10km away from the main city and has a perfect flow of vehicles to it. Carriers such as Air India, Indigo, Jet airways all have frequent flights in them.</p>
+	<h4>BY RAIL:</h4>
+	<p>Nagpur Junction is an important rail terminus of the country. It is the main junction between the central and the south eastern railway. A number of trains run between Mumbai, Pune, Hyderabad, Kolkata, Lucknow, Chennai etc.</p>
+	<h4>BY ROAD:</h4>
+	<p>Being a big and essential city, Nagpur is connected by a well maintained highway. The NH-6 or the Hajira- Kolkata highway connects Nagpur to various parts of the country. There are also two important bus terminus . The Nagpur Bus Sthanak and the Mor Bhawan. Buses from Nasik, Amravati, Hyderabad Mumbai and Pune fly very often.</p>
+	<hr><h2 style="font-size:35px;text-align:center;">Points of Interest</h2><hr>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="dikshaboomi.html" href="dikshaboomi.html">
+       <img src="images/dikshaboomi.jpg" alt="Dikshabhoomi" width="300" height="300">
+      </a>
+    <div class="desc">Dikshabhoomi</div>
+</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="Balaji-Mandir.html" href="Balaji-Mandir.html">
+       <img src="images/Balaji-Mandir.jpg" alt="Balaji-Mandir" width="300" height="300">
+      </a>
+    <div class="desc">Balaji Temple</div>
+</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="Ambazari_Lake.html" href="Ambazari_Lake.html">
+       <img src="images/Ambazari_Lake.jpg" alt="Ambazari_Lake" width="300" height="300">
+      </a>
+    <div class="desc">Ambazari Lake</div>
+</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="Dragon_Palace_Temple.html" href="Dragon_Palace_Temple.html">
+       <img src="images/Dragon_Palace_Temple.jpg" alt="Dragon_Palace_Temple" width="300" height="300">
+      </a>
+    <div class="desc">Dragon Palace Temple</div>
+</div>
+</div>
+
+<hr><h2 style="font-size:35px;text-align:center;">Where to Stay in Nagpur?</h2><hr>
+<div class="responsive">
+	<div class="gallery">
+      <a target="Hotel2_1.html" href="Hotel2_1.html">
+       <img src="images/hotel-siddharth-inn.jpg" alt="hotel-siddharth-inn" width="300" height="300">
+      </a>
+    <div class="desc">Hotel Siddharth Inn</div>
+</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="Hotel2_2.html" href="Hotel2_2.html">
+       <img src="images/hotel-woodland.jpg" alt="hotel-woodland" width="300" height="300">
+      </a>
+    <div class="desc">Hotel Woodland</div>
+</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="hotel-florainn.html" href="hotel-florainn.html">
+       <img src="images/florainn.jpg" alt="Hotel florainn" width="300" height="300">
+      </a>
+    <div class="desc">Hotel FloraInn</div>
+</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+      <a target="hotels/Hotel2_4.html" href="hotels/Hotel2_4.html">
+       <img src="images/tajland.jpg" alt="tajland Hotel" width="300" height="300">
+      </a>
+    <div class="desc">Hotel Taj Land</div>
+</div>
+</div>
+
+<hr><h2 style="font-size:35px;text-align:center;">Nagpur Tour Packages</h2><hr>
+<p>Nagpur is a city with myriad of delights. The third-largest city of the state has over the years become a highlight for tourists who love greenery and clean environs. Nagpur Tour Packages introduces the city pleasures like never before. So, what you waiting for, known more about the “City of Oranges”.</p>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/n1.jpg" alt="wildlife_Tour" style="width:50%">
+      <div class="container">
+        <h4>Maharashtra WildLife Tour</h4>
+        <p style="font-size:12.5px;">Nagpur-Tadoba National Park-Nagzira Wildlife Sanctuary-Nagpur</p>
+        <p>Duration:4 nights</p>
+        <p><a href="login1.html"><button class="button">Book Now</button></a></p>
+      </div>
+    </div>
+  </div>
+ <div class="column">
+    <div class="card">
+      <img src="images/na1.jpg" alt="Nagpur_Tour" style="width:60%;height:105px;">
+      <div class="container">
+        <h4>Nagpur City Tour</h4>
+        <title></title>
+        <p>Nagpur</p>
+        <p>Duration:2 Days</p>
+        <p><a href="login1.html"><button class="button">Book Now</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/n3.jpg" alt="Lonar_Tour" style="width:55.5%;height:55px;">
+      <div class="container">
+        <h4>Lonar Creator Tour From Nagpur</h4>
+        <title></title>
+        <p style="font-size:12.5px;">Places Covered:</p><p style="font-size:12.5px;">Nagpur,Buldhana</p>
+        <p>Duration:2 nights/3 Days</p>
+        <p><a href="login1.html"><button class="button">Book Now</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/n4.jpg" alt="nagpur_Tour" style="width:60%;height:75px;">
+      <div class="container">
+        <h4>Elephant Safari Tour</h4>
+        <title></title>
+        <p style="font-size:12.5px;">Places Covered:Delhi,Bandhavgarh</p>
+        <p style="font-size:12.5px;">kanha,Nagpur</p>
+        <p>Duration:9 Days</p>
+        <p><a href="login1.html"><button class="button">Book Now</button></a></p>
+      </div>
+    </div>
+  </div>
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+<div class="footer">
+ <table style="width:100%;">
+<tr>
+	<td>Privacy Policy</td>
+	<td>Instagram</td>
+	<td>Travel Information</td>
+</tr>
+<tr>
+	<td>Terms Of Use</td>
+	<td>Facebook</td>
+	<td>FAQs</td>
+</tr>
+<tr>
+	<td></td>
+	<td>tweeter</td>
+	<td><a href="contact.html">Write For Us</a></td>
+</tr>
+</table>
+<div style="text-align: center; padding: 16px;">
+       &copy; Copyright - Sonali 2019
+</div>
+</div>
+
+
+ 
+</body>
+</html>
+

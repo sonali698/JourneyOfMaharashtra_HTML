@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Of Maharashtra</title>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/hotel.css">
+</head>
+<body>
+
+<div class="slideshow-container">
+<div class="content">
+<a href="home.html"><img src="images/MT logo2.png" alt="logo" style="height:82px;width:7%;""/>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <input type="submit" class="search" alt="search">
+    </form>
+  </div>
+</div>
+
+<div class="myslides fade">
+ <div class="numbertext">1/4</div>
+  <img src="images/background1.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">2/4</div>
+  <img src="images/maharashtra.jpg" style="width:100%; height:300px;">
+  <div class="caption">Experience The Historical Places..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">3/4</div>
+  <img src="images/warli.jpg" style="width:100%; height:300px;">
+   <div class="caption">Lern The Art and Culture Of Maharashtra..</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbertext">4/4</div>
+  <img src="images/beach.jpg" style="width:100%; height:300px;">
+   <div class="caption">Experience Beauty Of Maharashtra..</div>
+</div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) 
+{
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) 
+{
+  showSlides(slideIndex = n);
+}
+function showSlides(n) 
+{
+  var i;
+  var slides = document.getElementsByClassName("myslides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) 
+  {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = " block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Place To Visit 
+    </button>
+    <div class="dropdown-content">
+      <a href="places.html">All Places</a>
+      <a href="pop3.html">Beaches</a>
+      <a href="Advanture.html">Advantures Places</a>
+      <a href="pop5.html">Heritage Places</a>
+      <a href="Temples.html">Pilgrimage Places</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Packages
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h2>By City</h2>
+          <a href="Amravati.html">Amravati</a>
+          <a href="Aurangabad.html">Aurangabad</a>
+          <a href="Nagpur.html">Nagpur</a>
+          <a href="Nashik.html">Nashik</a>
+          <a href="Konkan.html">Konkan</a>
+          <a href="Pune.html">Pune</a>
+        </div>
+        <div class="column">
+        <h2>By Type</h2>
+          <a href="pop3.html">Beach Tour Packages</a>
+          <a href="pop5.html">Historical Tour Packages</a>
+          <a href="Temples.html">Pilgrimage Tour Packages</a>
+          <a href="Advanture.html">Advanturous Tour Packages</a>
+        </div>
+        </div>
+    </div>
+  </div>
+   
+   <a href="contact.html">Contact Us</a>
+   <a href="login1.html" style="float:right">Login</a>
+   <a href="Signup.html" style="float:right">Registration</a>
+</div>
+
+<div class="middlecolumn">
+	<div class="card">
+	<hr>
+	<h1 style="font-size:50px;text-align:center;">Hotel Rama Heritage</h1>
+	<hr>
+	<img src="images/ramaheritage.jpg" alt="hotel-ramaheritage" width="600" height="300">
+	<a href="register.html" class="button">Book This Hotel<i class="right"></i></a>
+	<hr><h2 style="font-size:35px;text-align:left;">Hotel Description</h2><hr>
+	<p>Hotel Rama Heritage is one among the most preferred properties situated in Nashik. The hotel offers top class services and accommodation to avid travelers. Easily accessible and centrally located, the hotel is decked with handpicked modern day amenities to facilitate its guests. The staff at Hotel Rama Heritage is heartwarming and extremely ever-welcoming. Offering round the clock services to its guests, the staff here makes the hotel stand out from the rest. This property offers ample parking, and verdant gardens offering the ultimate ambience to lay back. Travelers who wish to wander past Nashik, can best book their rooms in advance at this hotel.</p>
+	<p>The rooms at this hotel are well furnished with the much needed amenities like a comfortable bed, make-up mirror, wardrobe, a seating area, flat screen TV and an attached bathroom with hot and cold water running. Wi-Fi facility is also available at this hotel which also houses conference and banquet halls. Hotel Rama Heritage serves pure-veg dishes which are great to relish. Laundry services and doctor on call are few other facilities that the hotel offers to its much valued guests. As this hotel is well-equipped with desktops, printer and high speed internet, it also serves as an ideal business centre. While you enjoy your stay at this aesthetically designed hotel, you can also indulge in a sightseeing trip to few of the most popular and spiritual attractions of Nashik, namely Ramkund and Kapleshewar Mandir.</p>
+	<hr><h2 style="font-size:35px;width:50%">Hotel Facilities</h2><hr>
+	<div class="a">
+	<ul>
+		<li>Bussiness Centre</li>
+		<li>Laundry Service</li>
+		<li>Parking Facility</li>
+		<li>Power Backup</li>
+		<li>Room Service</li>
+	<ul>
+	</div>
+	<hr><h2 style="font-size:35px;width:50%;">Room Facilities</h2><hr>
+	<div class="a">
+	<ul>
+		<li>Large Beds</li>
+		<li>Seating Area</li>
+		<li>Makeup Mirror</li>
+		<li>Wardrobe</li>
+		<li>Bottled Water</li>
+		<li>Attached Bathroom</li>
+		<li>Flat Screen TV</li>
+		<li>Hot And Cold Water Supply</li>
+	<ul>
+	</div>
+	<hr><h2 style="font-size:35px;text-align:left;">Dinning</h2><hr>
+	<p>Hotel Rama Heritage provides pure-vegetarian food to its guest which is truly delicious. Food lovers can chomp on a variety of north Indian, South Indian also Chinese delicacies during their stay at this hotel.</p>
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+<div class="footer">
+ <table style="width:100%;">
+<tr>
+	<td>Privacy Policy</td>
+	<td>Instagram</td>
+	<td>Travel Information</td>
+</tr>
+<tr>
+	<td>Terms Of Use</td>
+	<td>Facebook</td>
+	<td>FAQs</td>
+</tr>
+<tr>
+	<td></td>
+	<td>tweeter</td>
+	<td><a href="contact.html">Write For Us</a></td>
+</tr>
+</table>
+<div style="text-align: center; padding: 16px;">
+       &copy; Copyright - Sonali 2019
+</div>
+</div>
+
+</body>
+</html>
